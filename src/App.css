@@ -1,7 +1,13 @@
 @import-normalize;
 
+.content-box {
+    background-color: #fff;
+    padding: 1rem 1.75rem;
+}
+
 .wrapper {
     display: grid;
+    padding: 1rem 1.25rem;
     grid-template-columns: 1fr;
     grid-template-rows: 400px 1fr 1fr;
     width: 100%;
@@ -75,10 +81,14 @@ h1 {
 
 
 @media screen and (min-width:990px) {
+    .content-box {
+        padding: 2rem 3rem;
+    }
+
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 600px 1fr;
-        grid-template-rows: 300px 1fr;
+        grid-template-rows: 1fr;
     }
 
     .mainitem {
